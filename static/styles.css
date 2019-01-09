@@ -1,0 +1,47 @@
+/*@media screen and (max-width: 600px) {*/
+  /*.column {*/
+    /*width: 100%;*/
+  /*}*/
+/*}*/
+.column {
+    position:relative;
+    background:yellow;
+    width:100%;
+    min-width:300px;
+}
+
+.left  {
+    /*position:absolute;*/
+    float: left;
+    top:0px;
+    left:0px;
+    height:50px;
+    width:100px;
+    background:red;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+.left.bottom {
+    margin-left: -200px;
+    margin-top: 400px;
+    margin-left: -100px;
+}
+
+.right {
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:50px;
+    width:100px;
+    background:green;
+    margin-top: 250px;
+    margin-right: 250px;
+}
+
+.middle {
+    height:1000px;
+    width:5px;
+    background:blue;
+    margin:0px auto;
+}
