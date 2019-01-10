@@ -6,3 +6,4 @@ app = Flask(__name__)
 @app.route("/")
 def index():
 
+    request.args.get()

@@ -1,15 +1,23 @@
+
+body {
+    background-color: black;
+}
+
+
 .container {
+    height: auto;
     width: 80%;
     margin: 0 auto;
-    background-color: grey;
-    overflow: auto;
+    background-color: #A9A9A9;
+    /*overflow: auto;*/
     position: relative;
+    padding-bottom: 40px;
 }
 
 .line{
     height:100%;
     width:5px;
-    background:blue;
+    background:#00608E;
     margin:0px auto;
     position: absolute;
     left: 50%;
@@ -17,16 +25,96 @@
 }
 
 .timeline-item {
-    height: 200px;
-    width: 200px;
-    background-color: red;
+    /*height: 200px;*/
+    width: 35%;
+    background-color: white;
     clear: both;
+    position: relative;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.36);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.36);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px ;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    color: #333333;
+}
+
+p.quote {
+    border-left: 4px solid #00608E;
+    padding-left: 10px;
+    color: #75777E;
+    font-family: Helvetica, sans-serif;
+    color: #333333;
+}
+
+button  {
+    background-color: #00608E;
+    color: white;
+    border-radius: 3px;
+    padding: 6px 15px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-family: Helvetica, sans-serif;
+}
+
+.timeline-item .date {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    background-color: #FF4057;
 }
 
 .timeline-item_right {
     float: right;
+    margin-right: 75px;
+    margin-top: 50px;
+    padding-top: 75px;
+}
+
+.timeline-item_right div {
+    top: 0px;
+    left: 0px;
 }
 
 .timeline-item_left {
     float: left;
+    margin-left: 75px;
+    margin-top: 40px;
+}
+
+.timeline-item_left .date:after {
+    content: ' ';
+	position: absolute;
+	border-left: 10px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 40px;
+    right: -10px;
+
+
+}
+
+.timeline-item_left .date {
+    top: 0px;
+    right: 0px;
+}
+
+.clearfix {
+    clear: both;
 }
