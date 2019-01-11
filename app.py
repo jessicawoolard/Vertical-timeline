@@ -8,10 +8,11 @@ def index():
 
    position = request.args.get("position")
    print(position)
-
+    # left_class is = to my var in my HTML and right_class = to right var
    left_class = "timeline-item_left"
    right_class = "timeline-item_right"
 
+##This is my toggle. When query string says /?right.... left=[right and right=left
    if position == 'right':
        left_class =  "timeline-item_right"
        right_class = "timeline-item_left"
@@ -22,7 +23,7 @@ def index():
    # read contents of the file
    my_html = index_file.read()
 
-   #     # add use input back into the html
+    # add use input back into the html
    my_html = my_html.replace("{{timeline-item_left}}", left_class)
    my_html = my_html.replace("{{timeline-item_right}}", right_class)
 
